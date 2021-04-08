@@ -21,6 +21,9 @@ pipeline {
            terraform init           
            terraform plan -input=false
            terraform apply -auto-approve
+           
+           '''
+                    
             } 
         }
     }
