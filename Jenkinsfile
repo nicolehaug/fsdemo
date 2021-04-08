@@ -6,7 +6,7 @@ pipeline {
 
         sh '''
 
-        cd fsdemo
+        cd
            terraform refresh 
            terraform init           
            terraform plan -input=false
