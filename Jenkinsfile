@@ -1,12 +1,9 @@
 pipeline {
     agent any
-
+          }
     stages {
         stage('Provision Infrastructure') {
             steps {
-                echo "$GIT_BRANCH"
-            }   
-      steps {
                 script {
                 
        def tfHome = tool name: 'TF_0.13.5'
