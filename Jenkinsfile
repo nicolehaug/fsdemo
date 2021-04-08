@@ -1,6 +1,5 @@
 pipeline {
     agent any
-          }
     stages {
         stage('Provision Infrastructure') {
             steps {            
@@ -17,5 +16,5 @@ pipeline {
                     
             } 
         }
-    }
+    
 
