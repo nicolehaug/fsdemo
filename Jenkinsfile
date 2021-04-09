@@ -12,7 +12,7 @@ pipeline {
     // some block
 }
            terraform init           
-           terraform plan -input=false
+           terraform plan 
            terraform apply -auto-approve
            
            
