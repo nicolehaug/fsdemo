@@ -4,7 +4,7 @@ pipeline {
         
      stage('Provision Infrastructure') {
             steps {
-                script {               
+                             
 
         sh ''' 
          
@@ -19,6 +19,5 @@ pipeline {
                     
           } 
         }
-      }
-    }
-}
+      
+
