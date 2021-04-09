@@ -8,7 +8,9 @@ pipeline {
         
         sh script:'''
         
-          cd ./fsdemo
+          dir("${env.WORKSPACE}/aQA"){
+    sh "pwd"
+}
          
            terraform init           
            terraform plan -input=false
