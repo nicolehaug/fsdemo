@@ -7,7 +7,7 @@ pipeline {
         sh '''
         
         sh script:'''
-          #!/bin/bash
+        
           cd ./fsdemo
          
            terraform init           
