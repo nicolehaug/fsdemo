@@ -5,9 +5,11 @@ pipeline {
             steps {            
 
         sh '''
-
-        cd home/nicole/fsdemo
-           terraform refresh 
+        
+        sh script:'''
+          #!/bin/bash
+          cd ./fsdemo
+         
            terraform init           
            terraform plan -input=false
            terraform apply -auto-approve
