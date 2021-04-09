@@ -6,7 +6,7 @@ pipeline {
             steps {
                              
 
-        sh ''' 
+        sh
          
          dir('/home/nicole/fsdemo') {
     // some block
@@ -15,7 +15,7 @@ pipeline {
            terraform plan -input=false
            terraform apply -auto-approve
            
-           '''
+           
                     
           } 
         }
