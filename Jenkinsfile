@@ -4,9 +4,9 @@ pipeline {
         
      stage('Provision Infrastructure') {
             steps {
-                             
+                script {            
 
-        sh
+        sh '''
          
          dir('/home/nicole/fsdemo') {
     // some block
@@ -20,4 +20,5 @@ pipeline {
           } 
         }
     }
+}
 }
