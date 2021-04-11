@@ -4,9 +4,9 @@ pipeline {
         
      stage('Test Change Directory') {
             steps {
-                bash 'cd fsdemo'
-                bash 'ls -la'
-                bash 'echo $PATH'
+                 'cd fsdemo'
+                  'ls -la'
+                'echo $PATH'
             }              
           } 
         }
