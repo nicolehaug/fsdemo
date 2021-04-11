@@ -5,8 +5,6 @@ pipeline {
      stage('Test Change Directory') {
             steps {
                  'cd fsdemo'
-                  'ls -la'
-                'echo $PATH'
             }              
           } 
         }
