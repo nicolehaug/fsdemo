@@ -6,11 +6,7 @@ pipeline {
             steps {
                 script {            
 
-        sh '''
-         
-         dir('/home/nicole/fsdemo') {
-    // some block
-}
+   sh 'cd fsdemo'
            terraform init           
            terraform plan 
            terraform apply -auto-approve
