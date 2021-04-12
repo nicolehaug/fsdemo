@@ -5,7 +5,9 @@ pipeline {
      stage('Test Change Directory') {
             steps {
                  dir('fsdemo') {
-   run some tests inside myGit directory...
+   terraform init
+   terraform plan
+   terraform apply
 }
             }              
           } 
