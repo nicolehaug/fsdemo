@@ -4,7 +4,9 @@ pipeline {
         
      stage('Test Change Directory') {
             steps {
-                 'cd fsdemo'
+                 dir('fsdemo') {
+   run some tests inside myGit directory...
+}
             }              
           } 
         }
