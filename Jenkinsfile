@@ -2,13 +2,13 @@ pipeline {
     agent any
     stages {
         
-     stage('Test Change Directory') {
+     stage('Change working directory...') {
+            agent { docker 'my-image' }
+
             steps {
-                 dir('fsdemo') {
-   terraform init
-   terraform plan
-   terraform apply
-}
+                dir('fsdemo') {
+                    sh 'pwd'
+                }
             }              
           } 
         }
